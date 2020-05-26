@@ -1,4 +1,4 @@
-html and css
+html & css
 application
 java script
 
