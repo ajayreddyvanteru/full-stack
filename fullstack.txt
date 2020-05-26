@@ -1,6 +1,5 @@
- html and css
- script
-booting
+html and css
 application
 java script
+
 		
