@@ -1,5 +1,5 @@
 html & css
 application
-java script
+java scrips
 
 		
