@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Email Id</title>
+        <script>
+            function check(){
+                var p=/[0-9]{1}[A-Z][A-Z a-z 0-9]{5,15}\@[A-Z a-z]{2,10}\.[A-Z a-z]{2,3}/;
+                var user=document.getElementById("mail").value;
+                if(p.test(user)){
+                    window.alert("Valid");
+                }
+                else{
+                    window.alert("Invalid");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        enter mail: <input type="text" id="mail" placeholder="Enter Mail"/><br>
+        <button type="button" onclick="check()">Check</button>
+    </body>
+</html>
