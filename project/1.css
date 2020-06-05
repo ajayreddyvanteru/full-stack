@@ -1,0 +1,51 @@
+.a1{
+    display: inline-block;
+    border: 2px solid;
+    background-image:url('image2.jpg');
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: darkred;
+    width:100%;
+}
+.a2{
+    display: inline-block;
+    border: 2px solid black;
+    background-image:url('image1.jpg');
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bolder;
+    color: black;
+    width:100%;
+}
+.a3{
+    padding-left:350px;
+}
+.l1{
+    border: 2px solid red;
+    float:left;
+}
+.l2{
+    border: 2px solid red;
+    float: right;;
+}
+.name{
+    display: inline-block;
+    padding-top: 20px;
+    
+}
+nav{
+    display: inline-block;
+    border: 2px solid ;
+    background-color: lightskyblue;
+    width: 96.7%;
+    padding: 20px;
+}
+a{
+    padding: 20px;
+    text-transform: uppercase;
+}
+.a2{
+    border: black solid 2px;
+    float: left;
+}
