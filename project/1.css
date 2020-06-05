@@ -27,6 +27,7 @@
     padding: 5px;
     color: white;
     text-align: center;
+    font-size: larger;
 }
 .a4{
     width: 98%;
@@ -34,11 +35,24 @@
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
+    font-size: x-large;
     color:white;
 }
 .a5{
     color: white;
     margin: 100px;
+    font-size: x-large;
+    font-family: serif;
+    font-style: italic;
+}
+.a6{
+    color: black;
+    margin: 100px;
+    margin-left: 600px;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: sans-serif;
 }
 .l1{
     border: 2px solid red;
