@@ -1,3 +1,6 @@
+.a0{
+    background-image: url('background.jpg');
+}
 .a1{
     display: inline-block;
     border: 2px solid;
@@ -6,7 +9,9 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
     color: darkred;
-    width:100%;
+    text-shadow: yellow;
+    width:101%;
+    height: 100%;
 }
 .a2{
     display: inline-block;
@@ -19,7 +24,21 @@
     width:100%;
 }
 .a3{
-    padding-left:350px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+.a4{
+    width: 98%;
+    height: 630px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    color:white;
+}
+.a5{
+    color: white;
+    margin: 100px;
 }
 .l1{
     border: 2px solid red;
@@ -31,21 +50,22 @@
 }
 .name{
     display: inline-block;
-    padding-top: 20px;
+    padding-top: 65px;
+    text-align: center;
+    font-size: xx-large;
     
 }
 nav{
     display: inline-block;
     border: 2px solid ;
     background-color: lightskyblue;
-    width: 96.7%;
-    padding: 20px;
+    width: 97.9%;
+    padding:30px;
+    font-size: large;
 }
 a{
-    padding: 20px;
+margin: 20PX;
     text-transform: uppercase;
-}
-.a2{
-    border: black solid 2px;
-    float: left;
+    border:lightseagreen 2px solid;
+    padding: 0.5%;
 }
