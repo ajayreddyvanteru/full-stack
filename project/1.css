@@ -69,17 +69,22 @@
     font-size: xx-large;
     
 }
-nav{
+nav {
     display: inline-block;
     border: 2px solid ;
     background-color: lightskyblue;
-    width: 97.9%;
-    padding:30px;
+    width: 98.2%;
+    padding:20px;
     font-size: large;
 }
 a{
 margin: 20PX;
     text-transform: uppercase;
     border:lightseagreen 2px solid;
-    padding: 0.5%;
+    padding: 0.5%
+
+}
+.a7 :hover{
+    color: darkred;
+    font-weight: bolder;
 }
