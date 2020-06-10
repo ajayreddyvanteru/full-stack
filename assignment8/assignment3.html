@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/Jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+           
+            
+            $("#btntoggle").click(function(){
+                $("#id1").fadeToggle(2000);
+            });
+       
+        });
+    </script>
+    <style>
+        #id1{
+            margin-right: 1700px;
+            color: whitesmoke;
+           }
+           .list-group-item{
+               background-color: lightslategray;
+           }
+    </style>
+    </head>
+    <body>
+        <div id="id1">
+            <a class="list-group-item">Home</a>
+            <a class="list-group-item" > Library</a>
+            <a class="list-group-item" > Applications</a>
+            <a class="list-group-item" >Settings</a>
+          </div>
+        
+        <button type="button" id="btntoggle">execute fade in method</button>
+    </body>
+</html>
