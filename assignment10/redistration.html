@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration page</title>
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/Jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btnlogin").click(function(){
+                    var user= $("#txtusername").val();
+                    var pass= $("#txtpassword").val();
+                    var email= $("#txtemail").val();
+                    var mobile= $("#txtmobile").val();
+                    
+		            var u =/^[a-z 0-9 A-Z ]{6,9}$/;
+                    var p=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{5,12}$/;
+                    var e=/^[a-zA-Z0-9._-]{6,12}[@][a-z]{3,15}[.][a-z]{2,6}$/;
+                    var m=/^[6-9][0-9]{9}$/;
+                        if(u.test(user)&&p.test(pass)&&e.test(email)&&m.test(mobile)){
+            window.alert("successfully registered");
+        
+        }
+        else{
+            window.alert("Invalid");
+           
+        } 
+                });
+            });
+         </script>
+     </head>
+    <body>
+        <div class="container">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="username">username</label>
+                    <input type="text" class="form-control" id="txtusername" placeholder="enter username"/>
+                </div>
+                <div class="form-group">
+                    <label for="password">password</label>
+                    <input type="password" class="form-control" id="txtpassword" placeholder="enter password"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="text" class="form-control" id="txtemail" placeholder="enter email"/>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">mobile</label>
+                    <input type="text" class="form-control" id="txtmobile" placeholder="enter mobile"/>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="txtAddress" cols="30" rows="3" placeholder="Enter Address" class="form-control"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" id="btnlogin">login</button>
+            </form>
+        </div>
+    </body>
+</html>

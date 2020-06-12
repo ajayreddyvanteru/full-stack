@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>feedback </title>
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/Jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btnlogin").click(function(){
+                    var user= $("#txtusername").val();
+                    var dob= $("#txtdob").val();
+                    var mobile= $("#txtmobile").val();
+                    
+		            var u =/^[a-z 0-9 A-Z ]{6,9}$/;
+                    var m=/^[6-9][0-9]{9}$|^[0][6-9][0-9]{9}$|^[+][9][1][6-9][0-9]{9}$/;
+                    var d=/^(([0-2][0-9])|([3][0-1]))[/](([0][0-9])|([1][0-2]))[/]([1][9][0-9]{2})|([2][0-9]{3})$/;
+                        if(u.test(user)&&m.test(mobile)&&d.test(dob)){
+            window.alert("successfully registered");
+        
+        }
+        else{
+            window.alert("Invalid");
+           
+        } 
+                });
+            });
+         </script>
+     </head>
+    <body>
+        <div class="container">
+            <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Feedback Form</h1>
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="username">username</label>
+                    <input type="text" class="form-control" id="txtusername" placeholder="enter username"/>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">mobile</label>
+                    <input type="text" class="form-control" id="txtmobile" placeholder="enter mobile"/>
+                </div>
+                <div class="form-group">
+                    <label for="dob">DOB</label>
+                    <input type="text" class="form-control" id="txtdob" placeholder="enter DOB"/>
+                </div>
+                <div class="form-group">
+                    <label for="Feedback">Feedback</label>
+                    <textarea name="Feedback" id="txtfeedback" cols="30" rows="3" placeholder="Enter feedback" class="form-control"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" id="btnlogin">login</button>
+            </form>
+        </div>
+    </body>
+</html>
