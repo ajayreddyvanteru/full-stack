@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo</title>
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+        <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+        <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+        <script src="bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slider').bxSlider({
+                    auto: true,
+                    autoControls: true,
+                    stopAutoOnClick: true,
+                    pager: true,
+                    slideWidth: 1000,
+            });
+            }); 
+        </script>
+        <style>
+            #content{
+                background-color: lightblue;
+                height: 50px;
+                border: solid black 2px;
+                padding-top: 10px;
+            }
+            a{
+                color: blue;
+                font-size: large;
+                font-weight: bold;
+            }
+            a{
+                border: royalblue solid 2px;
+            }
+            img{
+                border: solid black 2px;
+            }
+            body{
+                background-image: url("image1.jpg");
+            }
+          
+          
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row" style="background-color: tomato;">
+                <div class="col-md 1">
+                    <img src="1.jpg" height="100px"/>
+                </div>
+             
+                <div class="col-md-8" style="padding-left: 250px;">
+                    <img src="image2.jpg" height="100px"/>
+                </div>
+              
+                <div class="col-md-1">
+                    <img src="1.jpg" height="100px"/>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="content">
+            <div class="row" class="cls1">
+                <div class="col-md-3">
+                    <span><i class="fa fa-sign-in"></i></span><a href="#">Login</a>
+                </div>
+                <div class="col-md-3">
+                    <span><i class="fa fa-user-circle"></i></span><a href="#">Registration</a>
+                </div>
+                <div class="col-md-3">
+                    <span><i class="fa fa-address-book"></i></span><a href="#">Contact Us</a>
+                </div>
+                <div class="col-md-3">
+                    <span><i class="fa fa-id-card-o"></i></span><a href="#">About Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div><img src="3.jpg" title="Img1" alt="Background"/></div>
+            <div><img src="4.jpg" title="Img2" alt="Student"/></div>
+            <div><img src="5.jpg" title="Img3" alt="Students"/></div>
+            <div><img src="6.jpg" title="Img3" alt="Students"/></div>
+        </div>
+    </body>
+</html>
+ 
